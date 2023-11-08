@@ -1,8 +1,43 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('/public/fonts/Oswald.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OswaldLight';
+  src: url('/public/fonts/Oswald-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OswaldExtraLight';
+  src: url('/public/fonts/Oswald-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OswaldBold';
+  src: url('/public/fonts/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OswaldSemiBold';
+  src: url('/public/fonts/Oswald-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OswaldMedium';
+  src: url('/public/fonts/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PasseroOneCyrillic';
+  src: url('/public/fonts/passero-one-cyrillic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'LiberationSans';
+  src: url('/public/fonts/LiberationSans.ttf') format('truetype');
+}
+
+
 html {
   margin: 0;
   padding: 0;
   //font-family: Arial, sans-serif;
-  font-family: Nocturne;
+  //font-family: Nocturne;
+  font-family: 'LiberationSans', sans-serif;
   color: #c9c9c9;
   scroll-behavior: smooth;
 }
@@ -87,17 +122,8 @@ html {
 }
 
 .divider {
-  &::before,
-  &::after {
-    content: "";
-    height: 0.25rem;
-    opacity: .1;
-    overflow: hidden;
-    pointer-events: none;
-    position: relative;
-    width: 100%;
-    background-color: #fff;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, auto));
 }
 
 .features__image {
@@ -113,16 +139,11 @@ html {
   }
 }
 
-.team {
-  figure {
-    background-color: #141a1c;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,.7));
-  }
+.shadow {
+  filter: drop-shadow(0 0 5px rgba(0,0,0,.7));
 }
 
 .team__image {
   background-color: #141a1c;
   filter: drop-shadow(0 0 10px rgba(0,0,0,.7));
 }
-

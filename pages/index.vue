@@ -10,14 +10,17 @@ import PageNavigation from "~/components/PageNavigation.vue";
     <main class="w-full">
       <section class="pt-52 pb-16" id="main">
         <div class="container mx-auto my-56">
-          <div class="flex flex-col justify-center items-center max-w-3xl h-96">
-            <div class="title-large uppercase text-7xl">Forsaken Lands</div>
-            <div class="header-button flex cursor-pointer py-4 mt-8 bg-gray-800">
-              <a href="#" class="flex gap-2">
+          <div class="flex flex-col justify-center items-center max-w-3xl h-96 gap-6">
+<!--            <div class="title-large uppercase text-7xl">Forsaken Lands</div>-->
+            <img class="opacity-80" src="/exports/LOGO.png" alt="logo" loading="lazy" />
+
+            <div class="flex justify-center items-center w-80">
+              <img class="opacity-80" src="/exports/answer_button_border.png" alt="logo" loading="lazy" />
+              <a href="#" class="flex gap-2 absolute">
                 <span class="flex items-center">
-                  <font-awesome-icon size="lg" icon="fa-brands fa-steam"/>
+                  <font-awesome-icon size="xl" icon="fa-brands fa-steam"/>
                 </span>
-                <span class="base-hovered text-xl uppercase">Wishlist us</span>
+                <span class="base-hovered text-2xl uppercase italic">Wishlist us</span>
               </a>
             </div>
           </div>
@@ -101,59 +104,81 @@ import PageNavigation from "~/components/PageNavigation.vue";
 
       <section class="pt-16 pb-52" id="about-us">
         <div class="container flex flex-col items-stretch mx-auto">
-          <div class="divider flex items-center gap-3 pb-10">
+          <div class="divider items-center gap-3 pb-10">
+            <img src="/exports/divider.png" alt="divider" loading="lazy" />
             <h1 class="title uppercase whitespace-nowrap">About us</h1>
+            <img src="/exports/divider.png" alt="divider" loading="lazy" />
           </div>
           <div class="team max-w-5xl gap-8 self-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <figure class="flex flex-col items-center p-6 bg-inner">
-              <div class="team__image mb-8 w-52 h-52 p-5 overflow-hidden rounded-full ">
-                <img class="rounded-full" src="/mike.png" alt="Mike" loading="lazy" />
+            <figure class="member relative flex flex-col items-stretch">
+              <img class="shadow absolute w-full h-full z-1" src="/exports/processed/text_back_alpha.png" alt="background" loading="lazy" />
+              <div class="flex flex-col p-6 pb-0">
+                <div class="relative self-center w-48 h-48">
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-30" src="/exports/portrait_border.png" alt="Mike" loading="lazy" />
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-20" src="/exports/chars/pierre_neutral.png" alt="Mike" loading="lazy" />
+                </div>
               </div>
-              <figcaption class="flex flex-col text-center gap-3">
+              <figcaption class="flex flex-col text-center h-full p-6 gap-3 z-10">
                 <h1 class="text-xl uppercase">Mike</h1>
                 <p class="text-xl">Producer | Co-founder</p>
                 <p class="text-xl">He worked as both a game designer and a programmer until he realized that he enjoyed managing the company more, so he quickly became a producer. He's a professional shark tank diver!
                 </p>
+                <font-awesome-icon size="2x" class="base-hovered cursor-pointer mt-auto" icon="fa-brands fa-twitter" />
               </figcaption>
             </figure>
-            <figure class="flex flex-col items-center p-6 bg-inner">
-              <div class="team__image mb-8 w-52 h-52 p-5 overflow-hidden rounded-full">
-                <img class="rounded-full" src="/konstantin.png" alt="Konstantin" loading="lazy" />
+            <figure class="member relative flex flex-col items-stretch">
+              <img class="shadow absolute w-full h-full z-1" src="/exports/processed/text_back_alpha.png" alt="background" loading="lazy" />
+              <div class="flex flex-col p-6 pb-0">
+                <div class="relative self-center w-48 h-48">
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-30" src="/exports/portrait_border.png" alt="Konstantin" loading="lazy" />
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-20" src="/exports/chars/pierre_neutral.png" alt="Konstantin" loading="lazy" />
+                </div>
               </div>
-              <figcaption class="flex flex-col text-center gap-3">
+              <figcaption class="flex flex-col text-center h-full p-6 gap-3 z-10">
                 <h1 class="text-xl uppercase">Konstantin</h1>
                 <p class="text-xl">Lead Game Designer | Co-founder</p>
                 <p class="text-xl">After trying out literally every role in game design over a career spanning more than 10 years, he decided to focus on team management and bringing his own projects to life.
                 </p>
+                <font-awesome-icon size="2x" class="base-hovered cursor-pointer mt-auto" icon="fa-brands fa-twitter" />
               </figcaption>
             </figure>
-            <figure class="flex flex-col items-center p-6 bg-inner">
-              <div class="team__image mb-8 w-52 h-52 p-5 overflow-hidden rounded-full">
-                <img class="rounded-full" src="/anastasia.png" alt="Anastasia" loading="lazy" />
+            <figure class="member relative flex flex-col items-stretch">
+              <img class="shadow absolute w-full h-full z-1" src="/exports/processed/text_back_alpha.png" alt="background" loading="lazy" />
+              <div class="flex flex-col p-6 pb-0">
+                <div class="relative self-center w-48 h-48">
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-30" src="/exports/portrait_border.png" alt="Anastasia" loading="lazy" />
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-20" src="/exports/chars/medina_neutral.png" alt="Anastasia" loading="lazy" />
+                </div>
               </div>
-              <figcaption class="flex flex-col text-center gap-3">
+              <figcaption class="flex flex-col text-center h-full gap-3 p-6 z-10">
                 <h1 class="text-xl uppercase">Anastasia</h1>
                 <p class="text-xl">Developer | SFX Magician</p>
                 <p class="text-xl">With her magical touch, creates projects of any complexity from scratch, establishing a strong foundation and clear structure. By the way, she can demolish anyone in D&D!
                 </p>
+                <font-awesome-icon size="2x" class="base-hovered cursor-pointer mt-auto" icon="fa-brands fa-twitter" />
               </figcaption>
             </figure>
-            <figure class="flex flex-col items-center p-6 bg-inner">
-              <div class="team__image mb-8 w-52 h-52 p-5 overflow-hidden rounded-full">
-                <img class="rounded-full" src="/daria.png" alt="Daria" loading="lazy" />
+            <figure class="member relative flex flex-col items-stretch">
+              <img class="shadow absolute w-full h-full z-1" src="/exports/processed/text_back_alpha.png" alt="background" loading="lazy" />
+              <div class="flex flex-col p-6 pb-0">
+                <div class="relative self-center w-48 h-48">
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-30" src="/exports/portrait_border.png" alt="Daria" loading="lazy" />
+                  <img class="absolute h-full left-2/4 -translate-x-1/2 z-20" src="/exports/chars/viola_neutral.png" alt="Daria" loading="lazy" />
+                </div>
               </div>
-              <figcaption class="flex flex-col text-center gap-3">
+              <figcaption class="flex flex-col text-center h-full gap-3 p-6 z-10">
                 <h1 class="text-xl uppercase">Daria</h1>
                 <p class="text-xl">2D Lead Artist | Magician</p>
                 <p class="text-xl">If you like the style of our games, it's all thanks to her. If you don't like it, she's to blame for that too! All our ideas take shape thanks to her imagination and strong brush. And yeah, she can also obliterate you in D&D!
                 </p>
+                <font-awesome-icon size="2x" class="base-hovered cursor-pointer mt-auto" icon="fa-brands fa-twitter" />
               </figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <section class="pt-16 pb-52" id="community">
+      <section class="pt-60 pb-52" id="community">
         <div class="container w-full mx-auto flex justify-end text-center lg:text-right xl:text-right">
           <div class="flex flex-col items-center lg:items-end xl:items-end max-w-2xl">
             <p class="title uppercase text-base font-semibold tracking-widest">community</p>
@@ -172,8 +197,9 @@ import PageNavigation from "~/components/PageNavigation.vue";
 
     </main>
     <footer class="pb-12">
-      <div class="container mx-auto h-full flex flex-col items-center justify-center gap-3">
-        <div class="uppercase text-7xl text-center">Forsaken Lands</div>
+      <div class="container mx-auto h-full flex flex-col items-center justify-center gap-4">
+<!--        <div class="uppercase text-7xl text-center">Forsaken Lands</div>-->
+        <img class="max-w-3xl opacity-80" src="/exports/LOGO.png" alt="logo" loading="lazy" />
         <SocialLinks icon-size="2x"/>
         <PageNavigation/>
         <p class="text-xl">All rights reserved</p>

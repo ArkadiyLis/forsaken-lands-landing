@@ -11,12 +11,13 @@ import SocialLinks from "~/components/SocialLinks.vue";
         <PageNavigation/>
         <SocialLinks/>
       </div>
-      <div class="header-button absolute cursor-pointer py-4 right-0 bg-gray-800">
-        <a href="#" class="flex gap-2">
-          <span class="flex items-center">
-            <font-awesome-icon size="lg" icon="fa-brands fa-steam" />
-          </span>
-          <span class="base-hovered text-xl uppercase">Wishlist us</span>
+      <div class="absolute cursor-pointer right-0 flex justify-center items-center w-80 -m-6">
+        <img class="opacity-80" src="/exports/answer_button_border.png" alt="logo" loading="lazy" />
+        <a href="#" class="flex gap-2 absolute">
+            <span class="flex items-center">
+              <font-awesome-icon size="xl" icon="fa-brands fa-steam"/>
+            </span>
+          <span class="base-hovered text-2xl uppercase italic">Wishlist us</span>
         </a>
       </div>
     </div>
