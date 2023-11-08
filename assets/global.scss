@@ -42,6 +42,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.oswald-semi-bold-font {
+  font-family: 'OswaldSemiBold', sans-serif;
+}
+.oswald-bold-font {
+  font-family: 'OswaldBold', sans-serif;
+}
+.oswald-font {
+  font-family: 'Oswald', sans-serif;
+}
+.oswald-light-font {
+  font-family: 'OswaldLight', sans-serif;
+}
+.oswald-extra-light-font {
+  font-family: 'OswaldExtraLight', sans-serif;
+}
+.passero-one-cyrillic-font {
+  font-family: 'PasseroOneCyrillic', sans-serif;
+}
+
 .base-hovered:hover {
   color: #ffc936;
 }
@@ -140,7 +159,7 @@ html {
 }
 
 .shadow {
-  filter: drop-shadow(0 0 5px rgba(0,0,0,.7));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,.7));
 }
 
 .team__image {
