@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <nav class="page-menu">
-    <ul class="flex flex-wrap gap-10">
+  <nav class="page-menu hidden lg:flex">
+    <ul class="flex flex-wrap gap-x-10 gap-y-5">
       <li>
         <a href="#description" class="base-hovered uppercase font-semibold tracking-widest relative hover:text-gray-400">
           <span class="oswald-semi-bold-font text-base uppercase">Forsaken Lands</span>

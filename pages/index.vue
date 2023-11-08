@@ -7,7 +7,7 @@ import PageNavigation from "~/components/PageNavigation.vue";
 <template>
   <div class="w-full bg-base">
     <Header/>
-    <main class="w-full">
+    <main class="overflow-hidden w-full">
       <section class="pt-52 pb-16" id="main">
         <div class="container mx-auto my-56">
           <div class="flex flex-col justify-center items-center max-w-3xl h-96 gap-6">
@@ -109,7 +109,7 @@ import PageNavigation from "~/components/PageNavigation.vue";
         </div>
       </section>
 
-      <section class="pt-16 pb-52" id="about-us">
+      <section class="pt-28 pb-52" id="about-us">
         <div class="container flex flex-col items-stretch mx-auto">
           <div class="divider items-center gap-3 pb-10">
             <img src="/exports/divider.png" alt="divider" loading="lazy" />
@@ -206,7 +206,7 @@ import PageNavigation from "~/components/PageNavigation.vue";
     <footer class="pb-12">
       <div class="container mx-auto h-full flex flex-col items-center justify-center gap-4">
 <!--        <div class="uppercase text-7xl text-center">Forsaken Lands</div>-->
-        <img class="max-w-3xl opacity-80" src="/exports/LOGO.png" alt="logo" loading="lazy" />
+        <img class="lg:max-w-3xl opacity-80" src="/exports/LOGO.png" alt="logo" loading="lazy" />
         <SocialLinks icon-size="2x"/>
         <PageNavigation/>
         <p class="text-xl">All rights reserved</p>

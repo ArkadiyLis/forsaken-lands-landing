@@ -40,6 +40,7 @@ html {
   font-family: 'LiberationSans', sans-serif;
   color: #c9c9c9;
   scroll-behavior: smooth;
+  word-break: break-all;
 }
 
 .oswald-semi-bold-font {
@@ -115,8 +116,7 @@ html {
   }
 }
 
-.page-menu,
-.footer-menu {
+.page-menu {
   li {
     position: relative;
   }
@@ -134,7 +134,7 @@ html {
   }
 }
 
-.footer-menu {
+footer {
   li:last-child::after {
     content: none;
   }
